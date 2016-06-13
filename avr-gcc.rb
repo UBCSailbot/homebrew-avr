@@ -8,7 +8,7 @@ class AvrGcc < Formula
     homepage 'http://www.gnu.org/software/gcc/gcc.html'
     url 'ftp://gcc.gnu.org/pub/gcc/releases/gcc-5.4.0/gcc-5.4.0.tar.bz2'
     mirror 'http://ftpmirror.gnu.org/gcc/gcc-5.4.0/gcc-5.4.0.tar.bz2'
-    sha512 '2941cc950c8f2409a314df497631f9b0266211aa74746c1839c46e04f1c7c299afe2528d1ef16ea39def408a644ba48f97519ec7a7dd37d260c3e9423514265b'
+    sha256 '608df76dec2d34de6558249d8af4cbee21eceddbcb580d666f7a5a583ca3303a'
 
     depends_on 'gmp'
     depends_on 'libmpc'
