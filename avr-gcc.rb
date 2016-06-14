@@ -6,9 +6,9 @@ require 'formula'
 class AvrGcc < Formula
 
     homepage 'http://www.gnu.org/software/gcc/gcc.html'
-    url 'ftp://gcc.gnu.org/pub/gcc/releases/gcc-6.1.0/gcc-6.1.0.tar.bz2'
-    mirror 'http://ftpmirror.gnu.org/gcc/gcc-6.1.0/gcc-6.1.0.tar.bz2'
-    sha256 '09c4c85cabebb971b1de732a0219609f93fc0af5f86f6e437fd8d7f832f1a351'
+    url 'ftp://gcc.gnu.org/pub/gcc/releases/gcc-5.4.0/gcc-5.4.0.tar.bz2'
+    mirror 'http://ftpmirror.gnu.org/gcc/gcc-5.4.0/gcc-5.4.0.tar.bz2'
+    sha256 '608df76dec2d34de6558249d8af4cbee21eceddbcb580d666f7a5a583ca3303a'
 
     depends_on 'gmp'
     depends_on 'libmpc'
