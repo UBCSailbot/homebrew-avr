@@ -11,7 +11,7 @@ Current Versions
 ----------------
 
 - `gcc 5.4.0` and `gcc 4.8.5`
-- `binutils 2.24.0`
+- `binutils 2.26.0`
 - `avr-libc 2.0.0`
 - `gdb 7.8.2`
 
@@ -83,4 +83,3 @@ This repository is based on the works of:
 [Homebrew]: https://github.com/mxcl/homebrew
 [Arduino]: http://arduino.cc
 [wiki]: http://wiki.github.com/mxcl/homebrew
-

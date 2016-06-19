@@ -3,9 +3,9 @@ require 'formula'
 class AvrBinutils < Formula
 
     homepage 'http://www.gnu.org/software/binutils/binutils.html'
-    url 'http://ftpmirror.gnu.org/binutils/binutils-2.25.tar.gz'
-    mirror 'http://ftp.gnu.org/gnu/binutils/binutils-2.25.tar.gz'
-    sha1 'f10c64e92d9c72ee428df3feaf349c4ecb2493bd'
+    url 'http://ftpmirror.gnu.org/binutils/binutils-2.26.tar.gz'
+    mirror 'http://ftp.gnu.org/gnu/binutils/binutils-2.26.tar.gz'
+    sha1 'bb933ec42eb2002d9270bd4c62a26c3706589ee9'
 
     # Support for -C in avr-size. See issue
     # https://github.com/larsimmisch/homebrew-avr/issues/9
