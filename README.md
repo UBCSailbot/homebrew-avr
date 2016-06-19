@@ -10,30 +10,31 @@ AVR is a popular family of microcontrollers, used for example in the
 Current Versions
 ----------------
 
-- `gcc 4.9.3` and `gcc 4.8.5`
+- `gcc 5.4.0` and `gcc 4.8.5`
 - `binutils 2.24.0`
-- `avr-libc 1.8.1`
+- `avr-libc 2.0.0`
 - `gdb 7.8.2`
 
 Installing homebrew-avr formulae
 --------------------------------
 
-First, just `brew tap osx-cross/avr` and then `brew install <formula>`.
+First, just `brew tap ubcsailbot/avr` and then `brew install <formula>`.
 
 To install the entire AVR toolchain, do:
 
 ```Bash
 # to tap the repository
-$ brew tap osx-cross/avr
+brew tap ubcsailbot/avr
 
-# to install the last version of avr-gcc, i.e. 4.9.2
-$ brew install avr-libc
+# to install the last version of avr-gcc, avr-gdb, and simavr
+brew install avr-libc avr-gdb
+brew install --HEAD simavr
 
 # or to install previous versions of avr-gcc
-$ brew install avr-libcXX
+brew install avr-libcXX
 
 # where XX is the version you want to install, eg. 4.8.3
-$ brew install avr-libc48
+brew install avr-libc48
 ```
 
 This will pull in the prerequisites `avr-binutils` and `avr-gcc`.
@@ -43,24 +44,24 @@ Switching between versions
 
 It is possible to have multiple versions of the AVR Toolchain installed side by side. But they cannot be used at the same time.
 
-To switch between version, for example from `4.9` to `4.8` you need to:
+To switch between version, for example from `5.4.0` to `4.8` you need to:
 
 ```Bash
-# First unlink the current 4.9 version
-$ brew unlink avr-gcc avr-libc
+# First unlink the current 5.4.0 version
+brew unlink avr-gcc avr-libc
 
 # Then link the 4.8 version
-$ brew link avr-gcc48 avr-libc48
+brew link avr-gcc48 avr-libc48
 ```
 
 And to switch from an older version to the latest version:
 
 ```Bash
 # Unlink the current version, where XX is the version number
-$ brew unlink avr-gccXX avr-libcXX
+brew unlink avr-gccXX avr-libcXX
 
 # Then link the latest version
-$ brew link avr-gcc avr-libc
+brew link avr-gcc avr-libc
 ```
 
 Docs
